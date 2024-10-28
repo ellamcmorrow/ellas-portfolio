@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <Menu />
+      <Menu fill="currentColor"/>
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );
