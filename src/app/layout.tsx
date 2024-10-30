@@ -20,8 +20,13 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <SidebarProvider>
-              <AppSidebar />
-              <SidebarTrigger />
+              <div className="grid">
+                <div className="grid-col-4">
+                  <div className="grid-rows-1 pt-16 pl-16">
+                  </div>
+                </div>
+              </div>
+
               {children}
             </SidebarProvider>
           </ThemeProvider>
