@@ -8,11 +8,11 @@ const Title = styled.h2`
   font-size: 10rem;
   font-weight: 700;
   font-family: "Neue Montreal", Helvetica, sans-serif;
+  color: white;
 `;
 
 const Character = styled(motion.span)`
   display: inline-block;
-  margin-right: -0.05em;
 `;
 
 const AnimatedTitle: React.FC<{

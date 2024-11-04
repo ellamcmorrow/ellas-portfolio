@@ -19,16 +19,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <SidebarProvider>
-              <div className="grid">
-                <div className="grid-col-4">
-                  <div className="grid-rows-1 pt-16 pl-16">
-                  </div>
-                </div>
-              </div>
-
-              {children}
-            </SidebarProvider>
+            {children}
           </ThemeProvider>
         </div>
       </body>
