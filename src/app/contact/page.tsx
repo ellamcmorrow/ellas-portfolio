@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import styled from "styled-components";
 
@@ -23,18 +22,59 @@ const Title = styled.h2`
 
 export default function Contact() {
   return (
-    <Wrapper>
+    <Wrapper className="p-24">
       <div className="grid">
         <div className="row">
-          <Title>CONTACT</Title>
+          <Title>GET IN TOUCH</Title>
         </div>
-        <div className="row">
-          <div className="grid-cols-4">
-            <Input className="form-input" placeholder="FIRST NAME" />
-            <Input className="form-input" placeholder="FIRST NAME" />
-            <div className="grid-cols-4">
+        <div className="grid grid-cols-3 gap-6 mt-6">
+          <div className="col-span-2">
+            <div className="grid grid-cols-2 gap-6">
               <Input className="form-input" placeholder="FIRST NAME" />
-              <Input className="form-input" placeholder="FIRST NAME" />
+              <Input className="form-input" placeholder="LAST NAME" />
+              <Input className="form-input" placeholder="EMAIL" />
+              <Input className="form-input" placeholder="TITLE" />
+              <Input className="form-input" placeholder="COMPANY" />
+            </div>
+          </div>
+          <div className="col-span-1 flex flex-col">
+            <div className="mb-6">
+              <h5 className="font-bold">NEW BUSINESS</h5>
+              <div className="grid-row">
+                <strong>Ella McMorrow</strong>
+              </div>
+              <div className="grid-row">
+                <small>2000990009</small>
+              </div>
+              <div className="grid-row">
+                <small>ek@gmail.com</small>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h5 className="font-bold">CAREERS</h5>
+              <div className="grid-row">
+                <strong>Ella McMorrow</strong>
+              </div>
+              <div className="grid-row">
+                <small>2000990009</small>
+              </div>
+              <div className="grid-row">
+                <small>ek@gmail.com</small>
+              </div>
+            </div>
+
+            <div>
+              <h5 className="font-bold">EMAIL</h5>
+              <div className="grid-row">
+                <strong>Ella McMorrow</strong>
+              </div>
+              <div className="grid-row">
+                <small>2000990009</small>
+              </div>
+              <div className="grid-row">
+                <small>ek@gmail.com</small>
+              </div>
             </div>
           </div>
         </div>
